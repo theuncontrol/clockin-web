@@ -18,6 +18,7 @@ export default createGlobalStyle`
   }
   
   :root {
+    --color-primary: #5fa8d3;
     --color-background: #f5f5f5;
   }
 `

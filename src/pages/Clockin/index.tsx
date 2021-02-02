@@ -10,7 +10,10 @@ const Clockin: React.FC = () => {
   return (
     <Container>
       <Form onSubmit={handleSubmit}>
-        <Input name="identity">Matricula ou ID do Colaborador</Input>
+        <h1>Ponto Digital</h1>
+        <Input name="identity" required autoComplete="off">
+          Matricula ou ID do Colaborador
+        </Input>
         <button type="submit">Bater o ponto</button>
       </Form>
     </Container>

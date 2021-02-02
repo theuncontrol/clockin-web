@@ -23,7 +23,9 @@ export const Input: React.FC<Props> = ({ name, children, ...rest }) => {
   return (
     <Container>
       <input ref={inputRef} defaultValue={defaultValue} id={name} {...rest} />
-      <label htmlFor={name}>{children}</label>
+      <label htmlFor={name}>
+        <span className="content-name">{children}</span>
+      </label>
     </Container>
   )
 }
